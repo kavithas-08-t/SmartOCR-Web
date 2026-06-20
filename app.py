@@ -74,11 +74,11 @@ def convert():
         "output.mp3"
     )
 
-    text_to_audio(
-        translated_text,
-        audio_path,
-        LANGUAGES[language]
-    )
+    ##text_to_audio(
+    ##translated_text,
+    ##audio_path,
+    ##LANGUAGES[language]
+    ##)
 
     return render_template(
     "index.html",
