@@ -74,16 +74,22 @@ def convert():
         "output.mp3"
     )
 
-    ##text_to_audio(
-    ##translated_text,
-    ##audio_path,
-    ##LANGUAGES[language]
-    ##)
+    try:
+        text_to_audio(
+            translated_text,
+            audio_path,
+            LANGUAGES[language]
+        )
+        audio_file = audio_path
+
+    except Exception as e:
+        print("Audio Error:", e)
+        audio_file = None
 
     return render_template(
     "index.html",
     extracted_text=translated_text,
-    audio_file=audio_path,
+    audio_file=audio_file,
     uploaded_file=filepath,
     status="✅ Conversion Completed Successfully"
 )
