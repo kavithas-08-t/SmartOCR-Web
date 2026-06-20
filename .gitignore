@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+
+static/audio/*
+static/uploads/*
+
+!static/audio/.gitkeep
+!static/uploads/.gitkeep
