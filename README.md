@@ -103,7 +103,7 @@ http://127.0.0.1:5000
 
 ## Live Demo
 
-[https://smartocr-web.onrender.com](https://smartocr-web-0zh5.onrender.com)
+(https://smartocr-web-0zh5.onrender.com)
 
 ---
 
