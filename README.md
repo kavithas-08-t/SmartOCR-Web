@@ -1,89 +1,125 @@
 # Smart OCR Translator & Voice Assistant
 
-## Overview
+A Flask-based web application that extracts text from images and PDF files using OCR, translates the extracted text into multiple languages, and converts the translated text into speech.
 
-Smart OCR Translator & Voice Assistant is a Flask-based web application that extracts text from images and PDF documents using Tesseract OCR, translates the extracted text into multiple languages, and converts the translated text into speech.
+---
 
 ## Features
 
-* Upload Images (PNG, JPG, JPEG)
-* Upload PDF Documents
-* OCR Text Extraction using Tesseract
-* Multilingual Translation
+- Extract text from Images (PNG, JPG, JPEG)
+- Extract text from PDF documents
+- OCR using Tesseract OCR
+- Translate text into multiple languages
+  - English
+  - Tamil
+  - Hindi
+- Convert translated text into speech
+- Audio playback
+- Download translated text
+- Download generated audio (MP3)
+- Drag & Drop file upload
+- Image preview
+- Responsive design (Desktop & Mobile)
+- Docker support
+- Deployed on Render
 
-  * English
-  * Tamil
-  * Hindi
-* Text-to-Speech Conversion
-* Audio Playback
-* Download Audio (MP3)
-* Download Translated Text
-* Image Preview
-* Drag & Drop Upload Interface
-* Responsive Web Design
+---
 
 ## Technologies Used
 
 ### Frontend
-
-* HTML5
-* CSS3
+- HTML5
+- CSS3
+- JavaScript
 
 ### Backend
-
-* Python
-* Flask
+- Python
+- Flask
 
 ### Libraries
+- pytesseract
+- Pillow
+- pdfplumber
+- deep-translator
+- gTTS
 
-* pytesseract
-* Pillow
-* pdfplumber
-* gTTS
-* deep-translator
+### Deployment
+- Docker
+- GitHub
+- Render
+
+---
 
 ## Project Structure
 
-SmartOCR-Web
+```
+SmartOCR-Web/
+│
+├── app.py
+├── ocr.py
+├── pdf_reader.py
+├── translator.py
+├── speech.py
+├── requirements.txt
+├── Dockerfile
+│
+├── templates/
+│   └── index.html
+│
+└── static/
+    ├── uploads/
+    └── audio/
+```
 
-* app.py
-* ocr.py
-* pdf_reader.py
-* speech.py
-* translator.py
-* requirements.txt
-* templates/
-
-  * index.html
-* static/
-
-  * uploads/
-  * audio/
+---
 
 ## Installation
 
-1. Clone the repository
+### Clone the Repository
 
-2. Install dependencies
+```bash
+git clone https://github.com/your-username/SmartOCR-Web.git
+```
 
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-3. Run the application
+### Run the Application
 
+```bash
 python app.py
+```
 
-4. Open browser
+### Open in Browser
 
+```
 http://127.0.0.1:5000
+```
 
-## Author
+---
 
-Akash
+## Live Demo
+
+https://smartocr-web.onrender.com
+
+---
 
 ## Future Enhancements
 
-* Additional Language Support
-* Cloud Deployment
-* User Authentication
-* OCR Accuracy Improvements
-* Mobile Application Version
+- Support more languages
+- Speech-to-Text
+- AI Text Summarization
+- User Authentication
+- OCR History
+- Mobile App Version
+
+---
+
+## Author
+
+**Akash**
+
+Final Year - Computer Science and Business Systems (CSBS)
