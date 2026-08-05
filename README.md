@@ -120,6 +120,6 @@ http://127.0.0.1:5000
 
 ## Author
 
-**Akash**
+**Kavithas T**
 
 Final Year - Computer Science and Business Systems (CSBS)
